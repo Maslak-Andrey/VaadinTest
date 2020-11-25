@@ -20,7 +20,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class User {
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,17 +28,10 @@ public class User {
 
     private String name;
 
-    private String surname;
-
-    private String email;
-
-    private String age;
-
-    private String password;
-
 //    @ManyToMany(fetch = FetchType.EAGER)
 //    @JoinTable(name = "user_roles",
-//            joinColumns = @JoinColumn(name = "user_id"),
-//            inverseJoinColumns = @JoinColumn(name = "role_id"))
-//    private List<Role> roles;
+//    joinColumns = @JoinColumn(name = "role_id"),
+//    inverseJoinColumns = @JoinColumn(name = "user_id"))
+//    private List<User> users;
+
 }
